@@ -12,3 +12,23 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
+
+# adblocks
+git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dnsfilter
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+
+# vpns
+git clone https://github.com/vernesong/OpenClash.git package/OpenClash
+git clone https://github.com/ttc0419/uuplugin.git package/uuplugin
+
+#parental control
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+
+# misc.
+git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-pushbot
+git clone https://github.com/riverscn/openwrt-iptvhelper.git package/openwrt-iptvhelper
+#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
+git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
+#smartdns
+git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
